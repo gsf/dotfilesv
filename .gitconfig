@@ -1,0 +1,10 @@
+[user]
+  name = Gabriel Farrell
+  email = g@gsf.io
+  username = gsf
+[alias]
+  ci = commit
+  co = checkout
+  rv = remote -v
+  st = status -sb
+  tree = log --oneline --graph --decorate --all --color
