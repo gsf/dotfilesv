@@ -8,3 +8,5 @@
   rv = remote -v
   st = status -sb
   tree = log --oneline --graph --decorate --all --color
+[push]
+  default = simple
