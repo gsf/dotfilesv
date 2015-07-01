@@ -46,7 +46,7 @@ case "$TERM" in
 esac
 
 # Night of the living ed
-export EDITOR='rlfe ed -l'
+export EDITOR='rlfe -h ~/.rlfe_history ed -l'
 alias e=$EDITOR
 
 # Pithy dotenv loading in the shell
