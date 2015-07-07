@@ -2,6 +2,7 @@ syntax on
 
 set expandtab
 set hidden
+set noautoindent
 set nojoinspaces
 set nowrap
 set ruler
