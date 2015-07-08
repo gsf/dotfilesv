@@ -1,0 +1,4 @@
+# https://github.com/neovim/neovim/issues/2254#issuecomment-86994382
+"\xc3\xa6": forward-word 
+"\xc3\xa2": backward-word
+"\xc3\xa4": kill-word
