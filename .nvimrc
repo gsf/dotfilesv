@@ -9,6 +9,7 @@ set ruler
 set showcmd
 set sw=2
 set ts=2
+set wim=list:longest
 
 " http://stackoverflow.com/questions/607435/why-does-vim-save-files-with-a-extension
 set nobackup
