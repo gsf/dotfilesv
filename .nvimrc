@@ -21,3 +21,9 @@ nnoremap <Tab> :b#<CR>
 
 " http://neovim.io/doc/user/nvim_terminal_emulator.html
 tnoremap <Esc> <C-\><C-n>
+
+" Split words at periods
+set isk-=.
+
+" I kinda like these space markings
+set list
