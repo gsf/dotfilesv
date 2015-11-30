@@ -55,7 +55,7 @@ alias e=$EDITOR
 dotenv () {
   if [ -e .env ]; then
     while read line; do
-      export "$line"
+      [ "$line" ] && export "$line"
     done < .env
   fi
 }
