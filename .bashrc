@@ -49,15 +49,14 @@ esac
 export EDITOR='rlfe -h ~/.rlfe_history ed -l'
 alias e=$EDITOR
 
-# Pithy dotenv loading in the shell
+# Dotenv loading in the shell
 # Inspired by http://stackoverflow.com/a/21831665/589391 and
-# https://github.com/gchaincl/dotenv.sh
+# https://github.com/gchaincl/dotenv.sh, then re-inspired
+# by the "set -a" trick from timwis
 dotenv () {
-  if [ -e .env ]; then
-    while read line; do
-      [ "$line" ] && export "$line"
-    done < .env
-  fi
+  set -a
+  [ -f .env ] && . .env
+  set +a
 }
 
 # Run dotenv on login
