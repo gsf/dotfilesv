@@ -49,7 +49,7 @@ esac
 export EDITOR='rlfe -h ~/.rlfe_history ed -l'
 alias e=$EDITOR
 
-# Dotenv loading in the shell
+# .env loading in the shell
 # Inspired by http://stackoverflow.com/a/21831665/589391 and
 # https://github.com/gchaincl/dotenv.sh, then re-inspired
 # by the "set -a" trick from timwis
