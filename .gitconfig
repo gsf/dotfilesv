@@ -3,8 +3,13 @@
   email = g@gsf.io
   username = gsf
 [alias]
+  bd = branch -d
+  bv = branch -vv
   ci = commit
   co = checkout
+  d = diff
+  ds = diff --staged
+  pb = !git push -u origin $(git rev-parse --abbrev-ref HEAD)
   rv = remote -v
   st = status -sb
   tree = log --oneline --graph --decorate --all --color
