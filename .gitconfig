@@ -1,17 +1,21 @@
+[alias]
+  bd = branch -d
+  b = branch -vva
+  ci = commit
+  co = checkout
+  d = diff --minimal
+  ds = diff --minimal --staged
+  f = fetch -p
+  m = merge
+  p = push
+  r = remote -v
+  s = status -sb
+  tree = log --oneline --graph --decorate --all --color
+[merge]
+  defaultToUpstream = true
+[push]
+  default = current
 [user]
   name = Gabriel Farrell
   email = g@gsf.io
   username = gsf
-[alias]
-  bd = branch -d
-  bv = branch -vv
-  ci = commit
-  co = checkout
-  d = diff
-  ds = diff --staged
-  ob = !git push -u origin $(git rev-parse --abbrev-ref HEAD)
-  rv = remote -v
-  st = status -sb
-  tree = log --oneline --graph --decorate --all --color
-[push]
-  default = simple
