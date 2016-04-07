@@ -49,6 +49,9 @@ esac
 export EDITOR='rlfe -h ~/.rlfe_history ed -l'
 alias e=$EDITOR
 
+# http://unix.stackexchange.com/questions/1045/getting-256-colors-to-work-in-tmux
+export TERM=xterm-256color
+
 # .env loading in the shell
 # Inspired by http://stackoverflow.com/a/21831665/589391 and
 # https://github.com/gchaincl/dotenv.sh, then re-inspired
