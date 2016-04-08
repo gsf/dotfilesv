@@ -63,13 +63,13 @@ dotenv () {
 }
 
 # Run dotenv on login
-dotenv
+#dotenv
 
 # Run dotenv on every new directory
-cd () {
-  builtin cd $@
-  dotenv
-}
+#cd () {
+#  builtin cd $@
+#  dotenv
+#}
 
 
 ## For vistar
