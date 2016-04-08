@@ -70,3 +70,11 @@ cd () {
   builtin cd $@
   dotenv
 }
+
+
+## For vistar
+#
+
+eval "$(rbenv init -)"
+
+export VAGRANT_DEFAULT_PROVIDER=lxc
