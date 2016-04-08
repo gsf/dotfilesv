@@ -1,12 +1,11 @@
 call plug#begin('~/.config/nvim/plugged')
 
-Plug 'derekwyatt/vim-scala'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'derekwyatt/vim-scala'
+Plug 'leafgarland/typescript-vim'
 
 call plug#end()
-
-syntax on
 
 set expandtab
 set hidden
