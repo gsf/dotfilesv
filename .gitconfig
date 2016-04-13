@@ -6,6 +6,7 @@
   d = diff --minimal
   ds = diff --minimal --staged
   f = fetch -p
+  l = log --decorate
   m = merge
   p = push
   r = remote -v
