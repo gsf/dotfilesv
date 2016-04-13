@@ -75,6 +75,6 @@ dotenv () {
 ## For vistar
 #
 
-eval "$(rbenv init -)"
+hash rbenv 2>/dev/null && eval "$(rbenv init -)"
 
 export VAGRANT_DEFAULT_PROVIDER=lxc
