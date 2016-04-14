@@ -78,3 +78,5 @@ dotenv () {
 hash rbenv 2>/dev/null && eval "$(rbenv init -)"
 
 export VAGRANT_DEFAULT_PROVIDER=lxc
+
+echo PATH=$PATH:/usr/local/go/bin
