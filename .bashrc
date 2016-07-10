@@ -24,9 +24,10 @@ shopt -s checkwinsize
 shopt -s globstar
 
 # Aliases
-alias ll='ls -alF'
-alias la='ls -AF'
-alias l='ls -F'
+alias l='LC_COLLATE=C ls -F'
+alias la='l -A'
+alias ll='l -l'
+alias lla='l -Al'
 
 # Enable bash completion in interactive shells
 if [ -f /etc/bash_completion ] && ! shopt -oq posix
