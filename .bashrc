@@ -71,3 +71,13 @@ dotenv () {
 #  builtin cd $@
 #  dotenv
 #}
+
+
+## For vistar
+#
+
+hash rbenv 2>/dev/null && eval "$(rbenv init -)"
+
+export VAGRANT_DEFAULT_PROVIDER=lxc
+
+export PATH=$PATH:/usr/local/go/bin

@@ -1,12 +1,17 @@
 [alias]
   bd = branch -d
   b = branch -vva
+  ca = commit --amend
   ci = commit
   co = checkout
   d = diff --minimal
   ds = diff --minimal --staged
   f = fetch -p
+  l = log --decorate
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --all
   m = merge
+  pg = push origin HEAD:refs/for/develop
+  pgm = push origin HEAD:refs/for/master
   p = push
   r = remote -v
   s = status -sb
@@ -17,5 +22,5 @@
   default = current
 [user]
   name = Gabriel Farrell
-  email = g@gsf.io
-  username = gsf
+  email = gabriel.farrell@vistarmedia.com
+  username = gabriel.farrell
