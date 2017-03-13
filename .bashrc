@@ -51,7 +51,7 @@ export EDITOR='rlfe -h ~/.rlfe_history ed -l'
 alias e=$EDITOR
 
 # http://unix.stackexchange.com/questions/1045/getting-256-colors-to-work-in-tmux
-export TERM=xterm-256color
+#export TERM=xterm-256color
 
 # .env loading in the shell
 # Inspired by http://stackoverflow.com/a/21831665/589391 and
@@ -72,12 +72,8 @@ dotenv () {
 #  dotenv
 #}
 
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:/usr/local/go/bin:$PATH
 
-## For vistar
-#
-
-hash rbenv 2>/dev/null && eval "$(rbenv init -)"
-
-export VAGRANT_DEFAULT_PROVIDER=lxc
-
-export PATH=$PATH:/usr/local/go/bin
+# http://stackoverflow.com/questions/2183900/how-do-i-prevent-git-diff-from-using-a-pager#comment41355379_14118014
+export LESS="-RFX"
