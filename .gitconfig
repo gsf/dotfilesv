@@ -1,26 +1,31 @@
 [alias]
-  bd = branch -d
-  b = branch -vva
-  ca = commit --amend
-  ci = commit
-  co = checkout
-  d = diff --minimal
-  ds = diff --minimal --staged
-  f = fetch -p
-  l = log --decorate
-  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --all
-  m = merge
-  pg = push origin HEAD:refs/for/develop
-  pgm = push origin HEAD:refs/for/master
-  p = push
-  r = remote -v
-  s = status -sb
-  tree = log --oneline --graph --decorate --all --color
+	bd = branch -d
+	bD = branch -D
+	b = branch -vva
+	ca = commit --amend
+	ci = commit
+	co = checkout
+	d = diff --minimal
+	ds = diff --minimal --staged
+	f = fetch -p
+	l = log --decorate
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ci) %C(bold blue)<%an>%Creset' --all
+	lp = log -p
+	m = merge
+	pg = push origin HEAD:refs/for/develop
+	pgm = push origin HEAD:refs/for/master
+	r = remote -v
+	s = status -sb
+	tree = log --oneline --graph --decorate --all --color
 [merge]
-  defaultToUpstream = true
+	defaultToUpstream = true
 [push]
-  default = current
+	default = current
 [user]
-  name = Gabriel Farrell
-  email = gabriel.farrell@vistarmedia.com
-  username = gabriel.farrell
+	name = Sean Fern
+	email = sean.fern@vistarmedia.com
+	username = sean.fern
+[core]
+	pager = less -x1,3
+[gitreview]
+	remote = origin
